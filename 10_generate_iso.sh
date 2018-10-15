@@ -11,8 +11,8 @@ rm -rf work/isoimage
 mkdir work/isoimage
 cd work/isoimage
 
-cp ../misc/isolinux.bin .
-cp ../misc/ldlinux.c32 .
+cp ../../misc/isolinux.bin .
+cp ../../misc/ldlinux.c32 .
 
 # Now we copy the kernel
 cp $WORK_KERNEL_DIR/arch/x86/boot/bzImage ./kernel.bz
