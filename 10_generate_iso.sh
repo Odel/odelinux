@@ -11,17 +11,8 @@ rm -rf work/isoimage
 mkdir work/isoimage
 cd work/isoimage
 
-# Search and copy the files 'isolinux.bin' and 'ldlinux.c32'
-for i in lib lib64 share end ; do
-    if [ -f usr/$i/syslinux/isolinux.bin ]; then
-        cp /usr/$i/syslinux/isolinux.bin .
-        if [ -f /usr/$i/syslinux/ldlinux.c32 ]; then
-            cp /usr/$i/syslinux/ldlinux.c32 .
-        fi;
-        break;
-    fi;
-    if [ $i = end ]; then exit 1; fi;
-done
+cp ../misc/isolinux.bin .
+cp ../misc/ldlinux.c32 .
 
 # Now we copy the kernel
 cp $WORK_KERNEL_DIR/arch/x86/boot/bzImage ./kernel.bz
