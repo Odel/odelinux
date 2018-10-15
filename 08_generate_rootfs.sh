@@ -80,25 +80,25 @@ EOF
 # available terminal.
 cat > welcome.txt << EOF
 
-  ########################################################
-  #________       .___     .__  .__                      #
-  #\_____  \    __| _/____ |  | |__| ____  __ _____  ___ #
-  # /   |   \  / __ |/ __ \|  | |  |/    \|  |  \  \/  / #
-  #/    |    \/ /_/ \  ___/|  |_|  |   |  \  |  />    <  #
-  #\_______  /\____ |\___  >____/__|___|  /____//__/\_ \ #
-  #        \/      \/    \/             \/            \/ #
-  #                   Odelinux v0.01                     #
-  #                       3/16/16                        #
-  ########################################################
+        ________       ___      __   __ 
+        \_____  \   __| _/____ |  | |__| ____  __ _____  ___
+         /   / \ \ / __ |/ __ \|  | |  |/    \|  |  \  \/  /
+        /   |__|  \ /_/ \  ___/|  |_|  |   |  \  |  />    <
+        \_________/_____|\_____\____/__|___|__/____//__/\__\
+
+                           Odelinux v0.02
+                              10/15/18
+
 
 EOF
 
 cat > patchnotes.txt << EOF
 
-3/16/16 - Only resolving eth0 now
-3/16/16 - Fixed a build issue, booting the whole file now, not 4 sectors
-3/10/16 - Added python
-3/10/16 - Initial version - 0.01
+03/16/16 - Only resolving eth0 now
+03/16/16 - Fixed a build issue, booting the whole file now, not 4 sectors
+03/10/16 - Added python
+03/10/16 - Initial version - 0.01
+10/15/18 - v0.02, kernel 4.18, busybox 1.29.3, no python for now
 
 EOF
 

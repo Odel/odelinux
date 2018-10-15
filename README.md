@@ -1,11 +1,14 @@
-Odelinux v0.01
+Odelinux v0.02
 
 Tiny linux "distro", initially based on minimal linux: http://minimal.linux-bg.org/
 
-Make sure git and build-essential are installed (I'm building this on Ubuntu)
-apt-get install git build-essential musl-tools
-
-Make sure isolinux.bin exists in /usr/lib/syslinux/isolinux.bin (I found one online, I'll look at making one later)
+Make sure these are installed:
+bison
+build-essential
+flex
+git
+libelf-dev
+libssl-dev
 
 git clone https://gitlab.com/Odel/Odelinux.git
 cd Odelinux
